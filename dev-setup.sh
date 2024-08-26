@@ -27,6 +27,7 @@ declare -a brew_packages=(
 "lsd"
 "jq"
 "neovim"
+"tmux"
 "fabric"
 )
 
@@ -56,9 +57,15 @@ brew install --cask wezterm
 brew install --cask font-meslo-lg-nerd-font
 curl -L https://gist.githubusercontent.com/auryn31/9490c7a3c1b462672f22faaa8606bf6e/raw/b9dac072be5520443f8e50c86334024db067813b/.wezterm.lua -o ~/.wezterm.lua
 
-echo "👉 setup nvim"
-mv ~/.ig/nvim ~/.config/nvim.bak
+
+echo "🥳 setup nvim"
+mv ~/.config/nvim ~/.config/nvim.bak
 git clone https://github.com/auryn31/lazyvim.setup.git ~/.config/nvim
+echo 'alias vim="nvim"' >>$ZSH_PROFILE
+
+echo "🥳 setup tmux"
+mv ~/.tmux.conf ~/.tmux.conf.bak
+curl -L https://gist.githubusercontent.com/auryn31/5cecdbad5a0c9c37e49768a518218b98/raw/7469899c168cfb091c20ce8a8c0490e6e770371e/tmux.conf -o ~/.tmux.conf
 
 echo "👉 install dbeaver"
 brew install --cask dbeaver-community
@@ -92,6 +99,9 @@ brew install gradle
 
 echo "☕️ install caffeine"
 brew install --cask domzilla-caffeine
+
+echo "👉 install orbstack"
+brew install orbstack
 
 echo "🚀 setup lsd"
 {
