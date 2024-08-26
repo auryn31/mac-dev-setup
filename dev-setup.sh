@@ -90,6 +90,9 @@ sdk install java
 brew install maven
 brew install gradle
 
+echo "☕️ install caffeine"
+brew install --cask domzilla-caffeine
+
 echo "🚀 setup lsd"
 {
   echo "alias ls='lsd'"
