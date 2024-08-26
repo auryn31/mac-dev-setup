@@ -3,7 +3,7 @@
 ## Guide
 
 ```sh
-./dev-setup.sh
+./run.sh
 ```
 
 ## References
