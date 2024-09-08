@@ -32,6 +32,7 @@ declare -a brew_packages=(
 "tmux"
 "fabric"
 "orbstack"
+"lazydocker"
 )
 
 for package in "${brew_packages[@]}"
