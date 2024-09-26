@@ -64,6 +64,7 @@ declare -a cask_packages=(
 "spotify"
 "whatsapp"
 "wezterm"
+"raycast"
 )
 
 for cask in "${cask_packages[@]}"
